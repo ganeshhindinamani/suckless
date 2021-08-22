@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "Choosing a random wallpaper...."
+wall=$(find $HOME/Mandalorian -type f | shuf -n 1)
+echo "Setting up wallpaper...."
+xwallpaper --zoom $wall
+echo "Generating pywal color schemes...."
+wal -i $wall >/dev/null
+#dkskdksldkcat $HOME/.cache/wal/colors-kitty.conf >> ~/.config/kitty/kitty.conf
+sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
+echo "Recompiling dwm with new colors...."
+(cd $HOME/DWM/dwm-autostart && sudo make clean install>/dev/null)
+echo "set..."
