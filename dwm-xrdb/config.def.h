@@ -10,7 +10,9 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "monospace:size=10" };
-static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+//static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+//static const char *fonts[]          = { "FantasqueSansMono Nerd Font Mono:size=10", "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+static const char *fonts[]          = { "monospace regular:size=10", "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
